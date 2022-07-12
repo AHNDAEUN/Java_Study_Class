@@ -1,6 +1,6 @@
 package org.object1;
 
-public class ObjectMain {// 데이터를 운반하는 역할 moster를 가져오면 name,hp, level을 다 가져올 수 있음
+public class ObjectMain {// 데이터를 운반하는 역할 moster를 가져오면 name, hp, level을 다 가져올 수 있음
 						// name, hp, level는 .을 이용하여 가져옴
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -12,6 +12,7 @@ public class Ex1_Main {
 		System.out.println("프로그램 시작");
 		
 //		Student st1 = new Student();
+		//st주소는  Student 타입  
 //		Student st2 = new Student();
 //		Student st3 = new Student();
 //		
@@ -33,15 +34,22 @@ public class Ex1_Main {
 		Scanner sc = new Scanner (System.in);
 		
 		    Student st = null;
-		
-			for (int i=0; i<3; i++) {
+		Student [] students= new Student[3];
+							// 몇개를 모을꺼야
+		for (int i=0; i<3; i++) {
 				
 			st = new Student();
 			System.out.println("이름 입력");
 			st.name = sc.next(); 
-			}
+			students[i]= st;
+		// student타입을 모으려고 하기 때문에 st타입을 넣어줌
+		}
 		
-			System.out.println(st.name);
+		System.out.println(students[0].name);
+		System.out.println(students[1].name);
+		System.out.println(students[2].name);
+			
+		System.out.println(st.name);
 		
 		System.out.println("프로그램 종료");
 		

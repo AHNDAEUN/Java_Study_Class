@@ -9,5 +9,5 @@ public class Student {
 	int math;
 	int eng;
 	int total;
-	int evg;
+	int avg;
 }

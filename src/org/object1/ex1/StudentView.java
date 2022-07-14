@@ -4,7 +4,7 @@ public class StudentView {
 
 	//view Message
 	//문자열을 받아서 그 문자열을 축력
-	public void viewMessage(String message) {
+	public void view(String message) {
 	
 		System.out.println(message);
 	}
@@ -12,7 +12,7 @@ public class StudentView {
 	
 	//view One
 	//학생 한명의 정보를 받아서 모든 정보를 출력
-	public void viewOne(Student student) {
+	public void view(Student student) {
 		  
 		
 		System.out.println(student.name);
@@ -25,7 +25,7 @@ public class StudentView {
 	//viewAll
 	//학생들의 정보를 받아서 모든 정보를 출력
 	
-	public void viewAll(Student[] students) {
+	public void view(Student[] students) {
 		
 		for (int i=0; i<students.length; i++) {
 			

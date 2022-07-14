@@ -5,6 +5,39 @@ import java.util.Scanner;
 
 public class StudentSevice {
 
+	// 스캐너를 멤버변수로 선언하면 메서드 안에서 사용가능
+		Scanner sc; 
+		// 바로 사용 불가능, 객체선언해야함 //객체만들땐 생성자 호출
+		
+		
+		public StudentSevice() { // 매개 변수가 없으면 기본생성자
+			sc=new Scanner(System.in);
+			
+		}
+	
+	//add Student
+	// 학생들의 정보를 받아서 
+	// 학생한명 추가
+	//추가된 학생정보들을 리턴
+		public Student addStudent () {
+			
+			sc= new Scanner(System.in);	
+			
+			System.out.println(" 학생의 번호를 입력하시오 ");
+
+			Student student1 =new Student();
+			
+			student1.name= sc.next();
+			student1.num=sc.nextInt();
+			student1.kor=sc.nextInt();
+			student1.eng=sc.nextInt();
+			student1.math=sc.nextInt();
+			
+				return student1;
+		}
+		
+
+		
 	
 	// findStudent
 	// 검색하고 싶은 학생의 번호를 입력받아서,
@@ -13,7 +46,7 @@ public class StudentSevice {
 	// 없으면 null; 리턴
 	
 	public Student findStudent(Student[] students) {
-		Scanner sc = new Scanner(System.in);
+//		Scanner sc = new Scanner(System.in);// 선언을 지역변수에만 해뒀기때문에 여기서만 사용가능
 		
 		System.out.println(" 학생의 번호를 입력하시오 ");
 		int num =sc.nextInt(); 
@@ -33,10 +66,6 @@ public class StudentSevice {
 		 
 }
 
-		 
-		
-	
-	
 	
 	// makeStudents 메서드 생성
 		// 인원수 입력 받고,
@@ -46,7 +75,7 @@ public class StudentSevice {
 	
 	
 	public Student[] makeStudents() {
-		Scanner sc= new Scanner(System.in);
+//	Scanner sc= new Scanner(System.in);
 		System.out.println("학생 수를 입력 하시오.");
 		int count =sc.nextInt();
 		
@@ -73,6 +102,7 @@ public class StudentSevice {
 		
 				st.total= st.kor+st.math+ st.eng;
 				st.avg = st.total/3;
+				st.setTotal();
 				
 				sts [i]=st;
 			

@@ -1,7 +1,44 @@
 package org.lang.String;
 
+import java.util.Scanner;
+
 public class StringStudy2 {
  
+	
+	public void ex2() {
+
+			//키보드로부터 파일명을 입력받음, abc.txt jpg.word
+			// 파일이 이미지파일인지 아닌지를 구별
+			// 이미지 파일이면 파일입니다. 아니면 파일이 아닙니다 출력
+			// 확장자가 jpg, png, gif, jpeg
+	
+				String [] files = {"jpg", "png", "gif", "jpeg"};
+				Scanner sc= new Scanner(System.in);
+				
+				System.out.println(" 이미지 파일명을 입력하세요. ");
+				String file = sc.next();
+					int index = file.lastIndexOf("."); // .을 기준으로 인덱스번호 찾기
+				
+					file =file.substring(index+1);// .gif		
+					String result =" 이미지 파일이 아닙니다. ";
+					
+					for (int i=0; i<files.length; i++) {
+					if(file.equals( file.equals(files)) {
+					
+						result =" 이미지 파일입니다. ";
+						break;
+	
+						 
+					}			
+					
+					
+					}
+					}
+	
+	
+	
+	
+	
 	
 	public void studyIndexofEx1() {
 		
@@ -69,10 +106,22 @@ public class StringStudy2 {
 
 	
 	
-	
-	
-	
-	
-	
 	}
+
+		public void studysubString() {
+	
+			//하나의 문자열을 분리하는 작업 (parsing)
+
+			String member = "iu/1234"; // 왼쪽은 아이디 오른쪽은 비번
+			String pw = member.substring(3);
+			String id = member.substring(0,2);
+			
+			System.out.println(pw);
+			System.out.println(id);
+			
+
+
+}
+
+
 }

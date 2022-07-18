@@ -25,8 +25,9 @@ public class StringMain1 {
 	
 	StringStudy2 sd = new StringStudy2();
 	//	sd.studyIndexofEx1();
-	
-	
+	//	sd.StudyIndexOf();
+	//sd.studysubString();
+	sd.ex2();
 	
 	}
 

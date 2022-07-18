@@ -14,6 +14,15 @@ public class StudentSevice {
 			sc=new Scanner(System.in);
 			
 		}
+		
+		
+		//removeStudent
+		//학생들의 정보를 받아서
+		// 삭제하려는 학생의 번호를 입력받음
+		//학생의 번호와 일치하는 학생을 삭제 
+		// 남은 학생정보들을 리턴 
+		
+		
 	
 	//add Student
 	// 학생들의 정보를 받아서 
@@ -27,8 +36,9 @@ public class StudentSevice {
 
 			Student student1 =new Student();
 			
-			student1.name= sc.next();
-			student1.num=sc.nextInt();
+			student1.setName(sc.next());
+			student1.setNum(sc.nextInt());
+			
 			student1.kor=sc.nextInt();
 			student1.eng=sc.nextInt();
 			student1.math=sc.nextInt();
@@ -86,22 +96,20 @@ public class StudentSevice {
 		Student st =new Student(); 
 		//내가 만들고 싶은 클래스명, 변수명:
 				System.out.println("학생 이름 입력");
-				st.name=sc.next();
+				st.setName(sc.next());
 				
 				System.out.println("학생 번호");	
-				st.num=sc.nextInt();
+				st.setNum(sc.nextInt());
 				
 				System.out.println("국어 점수");
-				st.kor=sc.nextInt();
+				st.setKor(sc.nextInt());
 				
 				System.out.println("수학 점수");
-				st.math=sc.nextInt();
+				st.setMath(sc.nextInt());
 				
 				System.out.println("영어 점수");
-				st.eng=sc.nextInt();
+				st.setEng(sc.nextInt());
 		
-				st.total= st.kor+st.math+ st.eng;
-				st.avg = st.total/3;
 				st.setTotal();
 				
 				sts [i]=st;

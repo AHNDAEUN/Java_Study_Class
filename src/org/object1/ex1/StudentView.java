@@ -15,10 +15,10 @@ public class StudentView {
 	public void view(Student student) {
 		  
 		
-		System.out.println(student.name);
-		System.out.println(student.num);
-		System.out.println(student.total);
-		System.out.println(student.avg);
+		System.out.println(student.getName());
+		System.out.println(student.getNum());
+		System.out.println(student.getTotal());
+		System.out.println(student.getAvg());
 	}
 	
 	
@@ -29,10 +29,10 @@ public class StudentView {
 		
 		for (int i=0; i<students.length; i++) {
 			
-			System.out.println(students[i].name);
-			System.out.println(students[i].num);
-			System.out.println(students[i].total);
-			System.out.println(students[i].avg);
+			System.out.println(students[i].getName());
+			System.out.println(students[i].getNum());
+			System.out.println(students[i].getTotal());
+			System.out.println(students[i].getAvg());
 	
 				
 			

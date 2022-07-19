@@ -27,7 +27,13 @@ public class StringMain1 {
 	//	sd.studyIndexofEx1();
 	//	sd.StudyIndexOf();
 	//sd.studysubString();
-	sd.ex2();
+	//	sd.ex2();
+
+	
+	StringStudy3 s3 =new StringStudy3();
+	s3.stringSplit();
+	s3.stringSplit2();
+	s3.stringSplit3();
 	
 	}
 

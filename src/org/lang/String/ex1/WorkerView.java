@@ -9,15 +9,15 @@ public class WorkerView {
 	// 메인에서 서비스 호출하고 뷰로 보냄 
 	
 	
-	public void WorkerView(WorkerDTO dtos){
+	public void view(WorkerDTO [] workerDTOs){
 		
 		
-		for (WorkerDTO dto: dots) {
+		for (WorkerDTO workerDTO:workerDTOs) {
 			
-			System.out.println("이름:"+dto.getName());
-			System.out.println("부서:"+dto.getDepertment());
-			System.out.println("직급:"+dto.getJob());
-			System.out.println("전화번호:"+dto.getPhone());
+			System.out.println("이름:"+workerDTO.getName());
+			System.out.println("부서:"+workerDTO.getDepertment());
+			System.out.println("직급:"+workerDTO.getJob());
+			System.out.println("전화번호:"+workerDTO.getPhone());
 		}
 
 		

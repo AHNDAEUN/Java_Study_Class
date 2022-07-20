@@ -1,5 +1,7 @@
 package org.lang.String.ex1;
 
+import java.util.StringTokenizer;
+
 public class WorkService {
 	// 생성자 자동완성 기능 = work+ ctrl + spacebar 
 	
@@ -22,14 +24,49 @@ public class WorkService {
 
 	 
 	 public WorkerDTO[] init() {
+		 //info 파싱해서 WorkerDTO에 대입하고
+		 //WorkerDTO를 모든배열로 리턴
+		 
+		 String info =sb.toString();
+		 String newInfo =info.replace(",", "-");
+		 		 
+		 	// StringTokenizer  문자열을 파싱하는데 전문적으로 쓰이고 있음 
+		 StringTokenizer st = new StringTokenizer (newInfo,"-");
+			WorkerDTO [] workerDTOs = new WorkerDTO[st.countTokens()/4];
+			int index=0;
+			while(st.hasMoreTokens()) {
+				WorkerDTO workerDTO = new WorkerDTO();
+				workerDTO.setName(st.nextToken());
+				workerDTO.setDepertment(st.nextToken());
+				workerDTO.setJob(st.nextToken());
+				workerDTO.setPhone(st.nextToken());
+				workerDTOs[index]=workerDTO;
+				index++;
+		 }
+			
 		 
 		 
 		 
+		 //		 String[] infos = newinfo.split("-");
+		//	WorkerDTO [] workerDTOs = new WorkerDTO[infos.length/4];
+			//
+//					System.out.println(infos.length);
+//					//i 0, 1, 2, 3
+//					for(int i=0;i<infos.length;i++) {
+//					
+//						WorkerDTO workerDTO = new WorkerDTO();
+//						workerDTOs[i/4]=workerDTO;
+//						workerDTO.setName(infos[i].trim()); 		//4, 8
+//						workerDTO.setDepartment(infos[++i].trim());	//5, 9
+//						workerDTO.setJob(infos[++i].trim());			//6, 10
+//						workerDTO.setPhone(infos[++i].trim());		//7, 11
 		 
-	 }
+		 
+//	 }
 	 
 	 
-	 
+		return workerDTOs;
+}
 	 
 	 
 

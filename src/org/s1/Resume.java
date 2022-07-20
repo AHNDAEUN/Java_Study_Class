@@ -18,6 +18,7 @@ public class Resume {
 //	 check.resumeCut(r2);
 //	 check.resumeCut(r);
 
+	boolean check;// 이력서 합격여부
 	
 // 생성자 (constructor)	
 	public Resume () {

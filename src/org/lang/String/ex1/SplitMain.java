@@ -11,8 +11,8 @@ public class SplitMain {//실행하거나 테스트 용도
 		WorkerView wv = new WorkerView();
 		
 		
-		WorkerDTO[] dtos =ws.init();
-//		wv.WorkerView(dtos);
+		WorkerDTO[] workerDTOs  =ws.init();
+		wv.view(workerDTOs);
 	
 	
 		int num =10;

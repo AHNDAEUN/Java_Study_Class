@@ -39,9 +39,9 @@ public class StudentSevice {
 			student1.setName(sc.next());
 			student1.setNum(sc.nextInt());
 			
-			student1.kor=sc.nextInt();
-			student1.eng=sc.nextInt();
-			student1.math=sc.nextInt();
+			student1.setKor(sc.nextInt());
+			student1.setEng(sc.nextInt());
+			student1.setMath(sc.nextInt());
 			
 				return student1;
 		}
@@ -65,7 +65,7 @@ public class StudentSevice {
 		
 		for (int i=0; i<students.length; i++) {   
 	
-			if(num==students[i].num) { 
+			if(num==students[i].getNum()) { 
 				student =students[i];
 				break;
 				

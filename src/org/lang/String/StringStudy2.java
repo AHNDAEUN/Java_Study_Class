@@ -16,14 +16,16 @@ public class StringStudy2 {
 				Scanner sc= new Scanner(System.in);
 				
 				System.out.println(" 이미지 파일명을 입력하세요. ");
-				String file = sc.next();
-					int index = file.lastIndexOf("."); // .을 기준으로 인덱스번호 찾기
 				
-					file =file.substring(index+1);// .gif		
+					String fileName="abc.test.gif.word";
+					int index = fileName.lastIndexOf("."); //.을 기준으로 인덱스번호 찾기
+					
+					
+					fileName=fileName.substring(index+1);//.gif		
 					String result =" 이미지 파일이 아닙니다. ";
 					
-					for (int i=0; i<files.length; i++) {
-					if(file.equals( file.equals(files)) {
+					for(int i=0;i<files.length;i++) {
+						if(fileName.equals(files[i])) {
 					
 						result =" 이미지 파일입니다. ";
 						break;
@@ -33,6 +35,9 @@ public class StringStudy2 {
 					
 					
 					}
+					System.out.println(result);
+					
+					
 					}
 	
 	
@@ -42,15 +47,16 @@ public class StringStudy2 {
 	
 	public void studyIndexofEx1() {
 		
-		//1. names에는 몇개의 쉼표가 있는가?(쉼표가 있는 인덱스번호 송출)
-				//2.총 몇명?
 		
 		String names ="iu, suzy, choa, hani"; //2,7,8, 
 		
 		
 		boolean check =true;
 		int count =0; //쉼표 갯수를 담을 변수  
-		int index=0; //,의 찾은 인덱스 번호 저장
+		int index=0; //,의 찾은 인덱스 번호 저장 //, 의 찾은 인덱스 번호
+		//1. names에는 몇개의 쉼표가 있는가??
+				//2, 총 몇명입니까?
+		
 		while (check) {
 			
 			index = names.indexOf ( ",", index );
@@ -81,8 +87,8 @@ public class StringStudy2 {
 //		indexOf(int ch, int fromIndex) ~부터 끝까지
 		
 		
-		str.indexOf("ll");   
-		//System.out.println(index);
+		int index=str.indexOf("ll");//ch => char 
+		System.out.println(index);
 		
 	  String replace =	str.replace('l', 'w');
 	

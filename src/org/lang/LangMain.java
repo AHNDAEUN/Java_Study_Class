@@ -19,7 +19,7 @@ public class LangMain {
 	
 	MemberClient mc =new MemberClient();
 	Car car = new Car();
-	
+	Car car2 = new Car();
 	obj = member; 
 	
 	boolean check =car.equals(obj);//// car == car2

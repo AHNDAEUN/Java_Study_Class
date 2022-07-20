@@ -1,6 +1,6 @@
 package org.lang.String.ex1;
 
-public class WorkerDTO {// 데이터를 담는 박스이며 데이터를 운반함 
+public class WorkerDTO {// DTO 데이터를 담는 박스이며 데이터를 운반함 
 						//vo 읽기전용
 	
 	//멤버변수의 접근지정자 =무조건 private

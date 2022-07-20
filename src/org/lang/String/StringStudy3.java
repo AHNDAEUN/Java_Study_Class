@@ -57,6 +57,12 @@ public class StringStudy3 {
 		
 		String [] names = str.split(","); //쉼표기준으로 분리 
 
+		
+		//for -> for(초기식;조건식;증감식){}
+				//향상된 for문 
+				//for(배열에모은데이터타입 변수명: 배열참조변수명){}
+		
+		
 		for(int i=0; i<names.length; i++) { //기존 사용한 for문 ,인덱스번호로 설정하여 사용해야할때
 			
 			String name = names[i];

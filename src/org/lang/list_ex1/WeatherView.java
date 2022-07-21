@@ -27,7 +27,6 @@ public class WeatherView {
 		
 	}
 	
-	
 	public void view(ArrayList<CityDTO> ar) {//3  <E>타입보증
 	
 		for (int i=0; i<ar.size();i++) { //ArrayList 사이즈 만큼

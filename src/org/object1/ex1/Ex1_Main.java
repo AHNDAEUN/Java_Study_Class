@@ -31,6 +31,8 @@ public class Ex1_Main {
 //		System.out.println(st1.math);
 //		System.out.println(st1.total);
 //		System.out.println(st1.evg);
+		
+		
 		Scanner sc = new Scanner (System.in);
 		
 		    Student st = null;

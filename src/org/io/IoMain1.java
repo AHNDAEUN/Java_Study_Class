@@ -23,12 +23,12 @@ public class IoMain1 {
 	
 		try {
 			System.out.println("키보드에서 입력 후 엔터칠때까지 움직일 수 있어");
-		String msg = br.readLine(); // 한줄을 읽어오세요
-	} catch (IOException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}  
-	
+			String msg = br.readLine(); // 한줄을 읽어오세요
+	}	 catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();  
+	}  		//지역변수는 초기화를 하지 않으면 쓸 수 없다 
+			 // System.out.println(msg);
 	}
 
 }

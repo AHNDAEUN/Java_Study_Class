@@ -23,6 +23,7 @@ public class WeatherService {
 
 	//find 메서드
 	//도시명을 입력받아서 리스트에서 검색 리턴
+	
 	private StringBuffer sb;
 	private Scanner sc;
 	public WeatherService() {
@@ -39,13 +40,16 @@ public class WeatherService {
 	
 			public void init (ArrayList<CityDTO> ar) {
 					String data =sb.toString(); // sb를 담은 주소를 문자열로 반환
+			
+					
 					System.out.println(data);
 					data = data.replace("-", ","); // 바꿀 것 
 					
 					StringTokenizer st = new StringTokenizer (data,",");
 					
 					while (st.hasMoreTokens()) {
-					
+			
+						
 						CityDTO cityDTO = new CityDTO ();
 						cityDTO.setName(st.nextToken());
 						cityDTO.setGion(Double.parseDouble(st.nextToken())); //parseDouble -문자열을 더블타입으로 변환

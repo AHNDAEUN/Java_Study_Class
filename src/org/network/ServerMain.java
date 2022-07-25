@@ -7,8 +7,10 @@ public class ServerMain {
 		System.out.println("Server Start");
 
 		Server1 server1 =new Server1();
+		Server2 server2 =new Server2();
 		try {
-			server1.receive();
+		//	server1.receive();
+				server2.getFood();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
